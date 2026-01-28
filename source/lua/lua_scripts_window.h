@@ -66,6 +66,9 @@ private:
 	wxButton* open_folder_button;
 	wxButton* clear_console_button;
 	wxButton* run_script_button;
+    wxButton* store_button;
+
+    void OnOpenStore(wxCommandEvent& event);
 
 	static LuaScriptsWindow* instance;
 

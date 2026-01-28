@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Tibia Map Presets - Nature & Dungeons",
+    "description": "A comprehensive collection of mountain, forest and dungeon presets for classic Tibia maps.",
+    "author": "Remere",
+    "version": "1.2.9",
+    "download_url": "https://example.com/presets.zip",
+    "filename": "presets_v1.lua",
+    "update_date": "5 days ago",
+    "rating": 2025
+  },
+  {
+    "name": "Tibia Auto-Border Expander",
+    "description": "Enhances the default auto-border logic to support more complex borders and transitions.",
+    "author": "Michy",
+    "version": "1.0.0",
+    "download_url": "https://example.com/border.zip",
+    "filename": "autoborder.lua",
+    "update_date": "1 week ago",
+    "rating": 190
+  },
+  {
+    "name": "House Decorator Pro",
+    "description": "Automates the placement of standard house furniture and common decorations.",
+    "author": "Michy",
+    "version": "1.0.0",
+    "download_url": "https://example.com/house.zip",
+    "filename": "house_decorator.lua",
+    "update_date": "1 month ago",
+    "rating": 430
+  },
+  {
+    "name": "Monster Spawn Optimizer",
+    "description": "Analyzes your map for efficient monster spawn positioning and balanced density.",
+    "author": "Michy",
+    "version": "1.0.0",
+    "download_url": "https://example.com/spawn.zip",
+    "filename": "spawn_opt.lua",
+    "update_date": "3 months ago",
+    "rating": 150
+  }
+]

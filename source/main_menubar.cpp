@@ -204,6 +204,7 @@ MainMenuBar::MainMenuBar(MainFrame* frame) :
 	// Scripts menu actions
 	MAKE_ACTION(SCRIPTS_OPEN_FOLDER, wxITEM_NORMAL, OnScriptsOpenFolder);
 	MAKE_ACTION(SCRIPTS_RELOAD, wxITEM_NORMAL, OnScriptsReload);
+	MAKE_ACTION(SCRIPTS_STORE, wxITEM_NORMAL, OnScriptsStore);
 	MAKE_ACTION(SCRIPTS_MANAGER, wxITEM_NORMAL, OnScriptsManager);
 
 	// A deleter, this way the frame does not need
@@ -798,6 +799,11 @@ void MainMenuBar::OnOpenRecent(wxCommandEvent& event) {
 	frame->LoadMap(fn);
 }
 
+#include "lua/lua_scripts_store.h"
+
+void MainMenuBar::OnScriptsStore(wxCommandEvent& WXUNUSED(event)) {
+    LuaScriptsStore::ShowStore(frame);
+}
 void MainMenuBar::OnOpen(wxCommandEvent& WXUNUSED(event)) {
 	g_gui.OpenMap();
 }

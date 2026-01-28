@@ -140,6 +140,11 @@ local MapClass = {}
 ---@param z number
 ---@return Tile|nil
 function MapClass:getTile(x, y, z) return nil end
+---@param x number
+---@param y number
+---@param z number
+---@return Tile|nil
+function MapClass:getOrCreateTile(x, y, z) return nil end
 
 ---@class App
 ---@field version string

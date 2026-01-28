@@ -160,6 +160,7 @@ namespace MenuBar {
 		// Scripts menu
 		SCRIPTS_OPEN_FOLDER,
 		SCRIPTS_RELOAD,
+		SCRIPTS_STORE,
 		SCRIPTS_MANAGER, // Show/hide Script Manager window
 		SCRIPTS_FIRST, // Dynamic script IDs start here
 		SCRIPTS_LAST = SCRIPTS_FIRST + 100, // Allow up to 100 scripts
@@ -302,6 +303,7 @@ public:
 	// Scripts Menu
 	void OnScriptsOpenFolder(wxCommandEvent& event);
 	void OnScriptsReload(wxCommandEvent& event);
+	void OnScriptsStore(wxCommandEvent& event);
 	void OnScriptsManager(wxCommandEvent& event);
 	void OnScriptExecute(wxCommandEvent& event);
 

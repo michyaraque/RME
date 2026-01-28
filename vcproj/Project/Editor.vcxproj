@@ -444,6 +444,7 @@
     <ClCompile Include="..\..\source\lua\lua_engine.cpp" />
     <ClCompile Include="..\..\source\lua\lua_script.cpp" />
     <ClCompile Include="..\..\source\lua\lua_script_manager.cpp" />
+    <ClCompile Include="..\..\source\lua\lua_scripts_store.cpp" />
     <ClInclude Include="..\..\source\lua\lua_api.h" />
     <ClInclude Include="..\..\source\lua\lua_api_app.h" />
     <ClInclude Include="..\..\source\lua\lua_api_position.h" />
@@ -461,6 +462,7 @@
     <ClInclude Include="..\..\source\lua\lua_engine.h" />
     <ClInclude Include="..\..\source\lua\lua_script.h" />
     <ClInclude Include="..\..\source\lua\lua_scripts_window.h" />
+    <ClInclude Include="..\..\source\lua\lua_scripts_store.h" />
     <ClInclude Include="..\..\source\lua\lua_script_manager.h" />
 
   </ItemGroup>

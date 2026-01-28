@@ -18,6 +18,7 @@
 #include "main.h"
 #include "lua_scripts_window.h"
 #include "lua_script_manager.h"
+#include "lua_scripts_store.h"
 #include "../gui_ids.h"
 
 #include <wx/filename.h>
@@ -33,6 +34,7 @@ EVT_BUTTON(SCRIPT_MANAGER_RELOAD, LuaScriptsWindow::OnReloadScripts)
 EVT_BUTTON(SCRIPT_MANAGER_OPEN_FOLDER, LuaScriptsWindow::OnOpenFolder)
 EVT_BUTTON(SCRIPT_MANAGER_CLEAR_CONSOLE, LuaScriptsWindow::OnClearConsole)
 EVT_BUTTON(SCRIPT_MANAGER_RUN_SCRIPT, LuaScriptsWindow::OnRunScript)
+EVT_BUTTON(SCRIPT_MANAGER_STORE, LuaScriptsWindow::OnOpenStore)
 END_EVENT_TABLE()
 
 LuaScriptsWindow::LuaScriptsWindow(wxWindow* parent) :
@@ -42,7 +44,8 @@ LuaScriptsWindow::LuaScriptsWindow(wxWindow* parent) :
 	reload_button(nullptr),
 	open_folder_button(nullptr),
 	clear_console_button(nullptr),
-	run_script_button(nullptr) {
+	run_script_button(nullptr),
+    store_button(nullptr) {
 	BuildUI();
 	RefreshScriptList();
 
@@ -87,6 +90,10 @@ void LuaScriptsWindow::BuildUI() {
 	run_script_button->SetToolTip("Run selected script");
 	run_script_button->Enable(false);
 	buttonSizer->Add(run_script_button, 0, wxALL, 2);
+
+    store_button = newd wxButton(this, SCRIPT_MANAGER_STORE, "Extension Store");
+    store_button->SetToolTip("Browse and install community extensions");
+    buttonSizer->Add(store_button, 0, wxALL, 2);
 
 	buttonSizer->AddStretchSpacer();
 
@@ -304,4 +311,8 @@ void LuaScriptsWindow::OnScriptCheckToggle(wxListEvent& event) {
 	size_t scriptIndex = static_cast<size_t>(script_list->GetItemData(index));
 	g_luaScripts.setScriptEnabled(scriptIndex, !g_luaScripts.isScriptEnabled(scriptIndex));
 	UpdateScriptState(index);
+}
+
+void LuaScriptsWindow::OnOpenStore(wxCommandEvent& event) {
+    LuaScriptsStore::ShowStore(this);
 }

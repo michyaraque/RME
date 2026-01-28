@@ -2,7 +2,6 @@
 -- @Author: Michy
 -- @Description: Demonstrates the procedural generation APIs (noise, algo, geo) with a rich UI for creating islands, caves, dungeons and more.
 -- @Version: 1.0
--- @Shortcut: Ctrl+Shift+T
 
 -- ============================================================================
 -- Configuration & State

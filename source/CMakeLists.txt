@@ -121,6 +121,7 @@ ${CMAKE_CURRENT_LIST_DIR}/lua/lua_api_creature.h
 ${CMAKE_CURRENT_LIST_DIR}/lua/lua_api_brush.h
 ${CMAKE_CURRENT_LIST_DIR}/lua/lua_api_image.h
 ${CMAKE_CURRENT_LIST_DIR}/lua/lua_scripts_window.h
+${CMAKE_CURRENT_LIST_DIR}/lua/lua_scripts_store.h
 ${CMAKE_CURRENT_LIST_DIR}/lua/lua_api_json.h
 ${CMAKE_CURRENT_LIST_DIR}/lua/lua_api_http.h
 ${CMAKE_CURRENT_LIST_DIR}/lua/lua_api_noise.h
@@ -246,6 +247,7 @@ ${CMAKE_CURRENT_LIST_DIR}/lua/lua_api_creature.cpp
 ${CMAKE_CURRENT_LIST_DIR}/lua/lua_api_brush.cpp
 ${CMAKE_CURRENT_LIST_DIR}/lua/lua_api_image.cpp
 ${CMAKE_CURRENT_LIST_DIR}/lua/lua_scripts_window.cpp
+${CMAKE_CURRENT_LIST_DIR}/lua/lua_scripts_store.cpp
 ${CMAKE_CURRENT_LIST_DIR}/lua/lua_api_json.cpp
 ${CMAKE_CURRENT_LIST_DIR}/lua/lua_api_http.cpp
 ${CMAKE_CURRENT_LIST_DIR}/lua/lua_api_noise.cpp

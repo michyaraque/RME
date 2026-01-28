@@ -236,6 +236,7 @@
 		<item name="Fog in light view" hotkey="" action="EXPERIMENTAL_FOG" help="Apply fog filter to light effect."/>
 	</menu>
 	<menu name="Scripts" special="SCRIPTS">
+		<item name="Scripts Store..." action="SCRIPTS_STORE" help="Browse and install community scripts."/>
 		<item name="Script Manager..." action="SCRIPTS_MANAGER" help="Show/hide the Script Manager window."/>
 		<separator/>
 		<item name="Open Scripts Folder" action="SCRIPTS_OPEN_FOLDER" help="Open the scripts folder in file explorer."/>
