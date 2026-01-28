@@ -802,7 +802,7 @@ void MainMenuBar::OnOpenRecent(wxCommandEvent& event) {
 #include "lua/lua_scripts_store.h"
 
 void MainMenuBar::OnScriptsStore(wxCommandEvent& WXUNUSED(event)) {
-    LuaScriptsStore::ShowStore(frame);
+	LuaScriptsStore::ShowStore(frame);
 }
 void MainMenuBar::OnOpen(wxCommandEvent& WXUNUSED(event)) {
 	g_gui.OpenMap();

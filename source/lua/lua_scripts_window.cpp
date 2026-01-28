@@ -45,7 +45,7 @@ LuaScriptsWindow::LuaScriptsWindow(wxWindow* parent) :
 	open_folder_button(nullptr),
 	clear_console_button(nullptr),
 	run_script_button(nullptr),
-    store_button(nullptr) {
+	store_button(nullptr) {
 	BuildUI();
 	RefreshScriptList();
 
@@ -91,9 +91,9 @@ void LuaScriptsWindow::BuildUI() {
 	run_script_button->Enable(false);
 	buttonSizer->Add(run_script_button, 0, wxALL, 2);
 
-    store_button = newd wxButton(this, SCRIPT_MANAGER_STORE, "Extension Store");
-    store_button->SetToolTip("Browse and install community extensions");
-    buttonSizer->Add(store_button, 0, wxALL, 2);
+	store_button = newd wxButton(this, SCRIPT_MANAGER_STORE, "Extension Store");
+	store_button->SetToolTip("Browse and install community extensions");
+	buttonSizer->Add(store_button, 0, wxALL, 2);
 
 	buttonSizer->AddStretchSpacer();
 
@@ -314,5 +314,5 @@ void LuaScriptsWindow::OnScriptCheckToggle(wxListEvent& event) {
 }
 
 void LuaScriptsWindow::OnOpenStore(wxCommandEvent& event) {
-    LuaScriptsStore::ShowStore(this);
+	LuaScriptsStore::ShowStore(this);
 }
